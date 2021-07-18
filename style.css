@@ -1,0 +1,101 @@
+body{
+  background-color:rgb(27, 28, 29);
+  color:rgb(45, 46, 48);
+}
+h1 {
+  font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color :aliceblue;
+  letter-spacing: 14px;
+  background-image: url(https://www.visitlongbranch.org/wp-content/uploads/2015/03/Wheat-field-at-the-sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 30px 30px;
+}
+
+.sect1{
+  border-radius: 0px 0px 3px 3px;
+}
+
+div{
+  background-color:rgb(245, 245, 245);
+  background-position: center;
+  padding: 30px 30px;
+  border-radius: 3px;
+}
+
+ol.b li{
+    counter-increment: cleanSlate;
+    display : inline-block;
+    margin-right: 20px;
+}
+
+ol.d li{
+   counter-increment: cleanSlate;
+} 
+
+ul li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  
+}
+
+ul li::before {
+  content: "Z";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding-top:1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 60%;
+  border-style: solid;
+  border-color: gold;
+  border-width: 2px;
+  background: rgb(226, 192, 0);
+  color:gold;
+  box-shadow: 2px 2px 3px 1px rgba(54, 47, 6, 0.329);
+  font-family: "times new roman";
+  font-weight: 900;
+  font-size: 80;
+  vertical-align: 1.5px;
+}
+
+ol li::before {
+  content: counter(cleanSlate);
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding-right: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px 5px 0px 5px;
+  background:  rgb(45, 46, 48);
+  color:rgb(245, 245, 245);
+  font-family: impact, serif;
+  font-weight: 100;
+  vertical-align: 1.5px;
+}
+
+a {
+  font-weight : 400;
+}
+
+a:link {
+  color : green;   
+}
+a:visited {
+  color : rgb(2, 61, 2);
+}
+
+a:hover {
+  color : lightgreen;
+}
+
+a:active {
+  color: darkgreen;
+}
